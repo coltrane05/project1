@@ -6,53 +6,53 @@
 
 void RulesAutomaton::S0(const std::string& input) {
     if (input[index] == 'R') {
-        indexRead++;
+        inputRead++;
         index++;
         S1(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
 void RulesAutomaton::S1(const std::string& input) {
     if (input[index] == 'u') {
-        indexRead++;
+        inputRead++;
         index++;
         S2(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
 void RulesAutomaton::S2(const std::string& input) {
     if (input[index] == 'l') {
-        indexRead++;
+        inputRead++;
         index++;
         S3(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
 void RulesAutomaton::S3(const std::string& input) {
     if (input[index] == 'e') {
-        indexRead++;
+        inputRead++;
         index++;
         S4(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
 void RulesAutomaton::S4(const std::string& input) {
     if (input[index] == 's') {
-        indexRead++;
+        inputRead++;
     }
     else {
-        serr();
+        Serr();
     }
 }

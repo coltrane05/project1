@@ -9,6 +9,10 @@ class Lexer
 private:
     std::vector<Automaton*> automata;
     std::vector<Token*> tokens;
+    int lineNumber;
+    int maxRead;
+    int maxAutomaton;
+
 
     void CreateAutomata();
 
@@ -20,7 +24,7 @@ public:
 
     void Run(std::string& input);
     
-    // TODO: add other public methods here
+    std::string toString() const;
 
 };
 

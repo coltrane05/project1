@@ -11,7 +11,7 @@ void IdAutomaton::S0(const std::string& input) {
         S1(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -20,8 +20,5 @@ void IdAutomaton::S1(const std::string& input) {
         inputRead++;
         index++;
         S1(input);
-    }
-    else {
-        serr();
     }
 }

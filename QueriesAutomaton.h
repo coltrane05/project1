@@ -9,12 +9,12 @@
 
 class QueriesAutomaton : public Automaton {
 private:
-    S1(const std::string& input);
-    S2(const std::string& input);
-    S3(const std::string& input);
-    S4(const std::string& input);
-    S5(const std::string& input);
-    S6(const std::string& input);
+    void S1(const std::string& input);
+    void S2(const std::string& input);
+    void S3(const std::string& input);
+    void S4(const std::string& input);
+    void S5(const std::string& input);
+    void S6(const std::string& input);
 
 public:
     QueriesAutomaton() : Automaton(TokenType::QUERIES) {}

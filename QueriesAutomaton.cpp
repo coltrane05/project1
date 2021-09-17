@@ -11,7 +11,7 @@ void QueriesAutomaton::S0(const std::string& input) {
         S1(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -22,7 +22,7 @@ void QueriesAutomaton::S1(const std::string& input) {
         S2(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -33,7 +33,7 @@ void QueriesAutomaton::S2(const std::string& input) {
         S3(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -44,7 +44,7 @@ void QueriesAutomaton::S3(const std::string& input) {
         S4(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -55,7 +55,7 @@ void QueriesAutomaton::S4(const std::string& input) {
         S5(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -66,7 +66,7 @@ void QueriesAutomaton::S5(const std::string& input) {
         S6(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -75,6 +75,6 @@ void QueriesAutomaton::S6(const std::string& input) {
         inputRead++;
     }
     else {
-        serr();
+        Serr();
     }
 }

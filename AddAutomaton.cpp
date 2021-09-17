@@ -9,6 +9,6 @@ void AddAutomaton::S0(const std::string& input) {
         inputRead = 1;
     }
     else {
-        serr();
+        Serr();
     }
 }

@@ -1,6 +1,21 @@
 #include "Lexer.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "CommaAutomaton.h"
+#include "FactsAutomaton.h"
+#include "IdAutomaton.h"
+#include "LeftParenAutomaton.h"
+#include "MultiplyAutomaton.h"
+#include "PeriodAutomaton.h"
+#include "QMarkAutomaton.h"
+#include "QueriesAutomaton.h"
+#include "RightParenAutomaton.h"
+#include "RulesAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "AddAutomaton.h"
+#include "CommentAutomaton.h"
+#include "StringAutomaton.h"
+#include <sstream>
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -11,14 +26,80 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new QueriesAutomaton());
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new RulesAutomaton());
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
-    // TODO: Add the other needed automata here
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new IdAutomaton());
+    automata.push_back(new LeftParenAutomaton());
+    automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new QMarkAutomaton());
+    automata.push_back(new RightParenAutomaton());
+    automata.push_back(new AddAutomaton());
+    automata.push_back(new CommentAutomaton());
+    automata.push_back(new StringAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
-    // TODO: convert this pseudo-code with the algorithm into actual C++ code
-    /*
+    lineNumber = 1;
+    while(input.size() > 0) {
+        maxRead = 0;
+        maxAutomaton = 0;
+
+        while (input[0] == ' ' | input[0] == '\n' | input[0] == '\t') {
+            if (input [0] == '\n') {
+                lineNumber++;
+            }
+            input.erase(0,1);
+        }
+
+        for(int i = 0; i < automata.size(); i++) {
+            int inputRead;
+            inputRead = automata.at(i)->Start(input);
+            if (inputRead > maxRead) {
+                maxRead = inputRead;
+                maxAutomaton = i;
+            }
+        }
+
+        if (maxRead > 0) {
+            std::string tokenString(input, 0, maxRead);
+            if (input[maxRead + 2] == std::string::npos) {
+                tokens.push_back(new Token(TokenType::UNDEFINED, tokenString, lineNumber));
+            }
+            else {
+                tokens.push_back(automata.at(maxAutomaton)->CreateToken(tokenString, lineNumber));
+            }
+            lineNumber = lineNumber + automata.at(maxAutomaton)->NewLinesRead();
+        }
+        else {
+            maxRead = 1;
+            std::string tokenString(input, 0, maxRead);
+            if (tokenString != "") {
+                tokens.push_back(new Token(TokenType::UNDEFINED, tokenString, lineNumber));
+            }
+        }
+        input.erase(0,maxRead);
+        if (input.size() == 0) {
+            tokens.push_back(new Token(TokenType::EOF_TOKEN, "", lineNumber));
+        }
+    }
+    //tokens.push_back(new Token(TokenType::EOF_TOKEN, "", lineNumber + 1));
+}
+
+std::string Lexer::toString() const {
+    std::ostringstream oss;
+    for (int i = 0; i < tokens.size(); i++) {
+        oss << tokens.at(i)->toString() << std::endl;
+    }
+    oss << "Total Tokens = " << tokens.size();
+    return oss.str();
+}
+/*
     set lineNumber to 1
     // While there are more characters to tokenize
     loop while input.size() > 0 {
@@ -55,4 +136,3 @@ void Lexer::Run(std::string& input) {
     }
     add end of file token to all tokens
     */
-}

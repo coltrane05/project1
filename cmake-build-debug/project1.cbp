@@ -107,6 +107,12 @@
 		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/CommaAutomaton.h">
 			<Option target="project1"/>
 		</Unit>
+		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/CommentAutomaton.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/CommentAutomaton.h">
+			<Option target="project1"/>
+		</Unit>
 		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/FactsAutomaton.cpp">
 			<Option target="project1"/>
 		</Unit>
@@ -171,6 +177,12 @@
 			<Option target="project1"/>
 		</Unit>
 		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/SchemesAutomaton.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/StringAutomaton.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/StringAutomaton.h">
 			<Option target="project1"/>
 		</Unit>
 		<Unit filename="/Users/coltoncrapo/repositories/CS236/project1/Token.cpp">

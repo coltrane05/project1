@@ -13,7 +13,7 @@ private:
 public:
     CommaAutomaton() : Automaton(TokenType::COMMA) {}
 
-    void S0(const std::string& input&);
+    void S0(const std::string& input);
 };
 
 #endif //PROJECT1_COMMAAUTOMATON_H

@@ -19,17 +19,22 @@ enum class TokenType {
     ID,
     STRING,
     COMMENT,
-    EOF,
+    EOF_TOKEN,
     UNDEFINED
 };
 
 class Token
 {
 private:
-    // TODO: add member variables for information needed by Token
+    TokenType myTokenType;
+    std::string myDescription;
+    int lineNumber;
+
 
 public:
     Token(TokenType type, std::string description, int line);
+
+    std::string toString() const;
 
     // TODO: add other needed methods
 };

@@ -11,7 +11,7 @@ void FactsAutomaton::S0(const std::string& input) {
         S1(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -22,7 +22,7 @@ void FactsAutomaton::S1(const std::string& input) {
         S2(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -33,7 +33,7 @@ void FactsAutomaton::S2(const std::string& input) {
         S3(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -44,7 +44,7 @@ void FactsAutomaton::S3(const std::string& input) {
         S4(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -53,6 +53,6 @@ void FactsAutomaton::S4(const std::string& input) {
         inputRead++;
     }
     else {
-        serr();
+        Serr();
     }
 }

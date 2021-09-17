@@ -11,7 +11,7 @@ void SchemesAutomaton::S0(const std::string& input) {
         S1(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
@@ -22,59 +22,59 @@ void SchemesAutomaton::S1(const std::string& input) {
         S2(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
-void SchemesAutomaton::S2(const std::string input) {
+void SchemesAutomaton::S2(const std::string& input) {
     if (input[index] == 'h') {
         inputRead++;
         index++;
         S3(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
-void SchemesAutomaton::S3(const std::string input) {
+void SchemesAutomaton::S3(const std::string& input) {
     if (input[index] == 'e') {
         inputRead++;
         index++;
         S4(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
-void SchemesAutomaton::S4(const std::string input) {
+void SchemesAutomaton::S4(const std::string& input) {
     if (input[index] == 'm') {
         inputRead++;
         index++;
         S5(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
-void SchemesAutomaton::S5(const std::string input) {
+void SchemesAutomaton::S5(const std::string& input) {
     if (input[index] == 'e') {
         inputRead++;
         index++;
         S6(input);
     }
     else {
-        serr();
+        Serr();
     }
 }
 
-void SchemesAutomaton::S6(const std::string input) {
+void SchemesAutomaton::S6(const std::string& input) {
     if (input[index] == 's') {
         inputRead++;
     }
     else {
-        serr();
+        Serr();
     }
 }
