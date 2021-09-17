@@ -14,43 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bdc6fd2-79ed-4513-9fc6-3c7dbbd559f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CommentAutomaton.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CommentAutomaton.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StringAutomaton.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StringAutomaton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AddAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommaAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CommaAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommaAutomaton.h" beforeDir="false" afterPath="$PROJECT_DIR$/CommaAutomaton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FactsAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FactsAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/IdAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftParenAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LeftParenAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lexer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lexer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lexer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lexer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiplyAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplyAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PeriodAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PeriodAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QMarkAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QMarkAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QueriesAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QueriesAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QueriesAutomaton.h" beforeDir="false" afterPath="$PROJECT_DIR$/QueriesAutomaton.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RightParenAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RightParenAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RulesAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RulesAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchemesAutomaton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SchemesAutomaton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Token.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token.h" beforeDir="false" afterPath="$PROJECT_DIR$/Token.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="5bdc6fd2-79ed-4513-9fc6-3c7dbbd559f7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +54,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
@@ -118,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631236535934</updated>
       <workItem from="1631236537320" duration="336000" />
-      <workItem from="1631550869404" duration="36807000" />
+      <workItem from="1631550869404" duration="37498000" />
     </task>
     <servers />
   </component>

@@ -50,14 +50,14 @@ void Lexer::Run(std::string& input) {
         maxRead = 0;
         maxAutomaton = 0;
 
-        while (input[0] == ' ' | input[0] == '\n' | input[0] == '\t') {
+        while ((input[0] == ' ') | (input[0] == '\n') | (input[0] == '\t')) {
             if (input [0] == '\n') {
                 lineNumber++;
             }
             input.erase(0,1);
         }
 
-        for(int i = 0; i < automata.size(); i++) {
+        for (size_t i = 0; i < automata.size(); i++) {
             int inputRead;
             inputRead = automata.at(i)->Start(input);
             if (inputRead > maxRead) {
@@ -68,12 +68,7 @@ void Lexer::Run(std::string& input) {
 
         if (maxRead > 0) {
             std::string tokenString(input, 0, maxRead);
-            if (input[maxRead + 2] == std::string::npos) {
-                tokens.push_back(new Token(TokenType::UNDEFINED, tokenString, lineNumber));
-            }
-            else {
-                tokens.push_back(automata.at(maxAutomaton)->CreateToken(tokenString, lineNumber));
-            }
+            tokens.push_back(automata.at(maxAutomaton)->CreateToken(tokenString, lineNumber));
             lineNumber = lineNumber + automata.at(maxAutomaton)->NewLinesRead();
         }
         else {
@@ -93,7 +88,7 @@ void Lexer::Run(std::string& input) {
 
 std::string Lexer::toString() const {
     std::ostringstream oss;
-    for (int i = 0; i < tokens.size(); i++) {
+    for (size_t i = 0; i < tokens.size(); i++) {
         oss << tokens.at(i)->toString() << std::endl;
     }
     oss << "Total Tokens = " << tokens.size();
